@@ -39,6 +39,14 @@
       list-style: none;
       margin: 0 2.3rem;
     }
+    .nav ul li a{
+     text-decoration: none;
+     color: #fff;
+    }
+    .nav ul li a:hover{
+      color: rgb(153,153,226);
+      font-size: 1.06rem;
+     }
     .left{
       font-size: 2.6rem;
     }
@@ -65,6 +73,10 @@
       color: #b581e6;
     }
 
+    #element{
+      color: #b581e6;
+
+    }
 
   </style>
 </head>
@@ -74,11 +86,11 @@
       <div class="left">Toufik Portfolio</div>
       <div class="right">
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Services</li>
-          <li>Project</li>
-          <li>Contact Me</li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Services</a></li>
+          <li><a href="/">Project</a></li>
+          <li><a href="/">Contact Me</a></li>
         </ul>
       </div>
     </nav>
@@ -89,11 +101,21 @@
         Hi, My Name is <span class="purple">Toufik</span>
         <div>and I am a passionate</div>
         <div>Web Developer</div>
+        <span id="element"></span>
+
       </div>
       <div class="right-section">
         <img src="/right-section-img.png" alt="">
       </div>
     </section>
   </main>
+  
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Web Designer','Frontend-Developer'],
+      typeSpeed: 50,
+    });
+  </script>
 </body>
 </html>
