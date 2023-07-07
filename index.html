@@ -70,6 +70,18 @@
     .left-section{
       font-size: 3.4rem;
     }
+    .left-section .buttons{
+      padding: 5rem 0;
+    }
+    .left-section .btn{
+      padding: 1.2rem;
+      background-color: #1e2167;
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 6px;
+      font-size: 2rem;
+      cursor: pointer;
+    }
     .right-section img{
       width: 80%;
 
@@ -86,9 +98,71 @@
     .second-section{
       max-width: 80vw;
       margin: auto;
+      height: 80vh;
+
     }
 
-    
+    .second-section h1{
+      font-size: 2.2rem;
+    }
+
+    .text-gray{
+      color: #888;
+    }
+    .second-section .box{
+      background: #fff;
+      width: 75vw;
+      height: 2px;
+      margin: 5.6rem 0;
+      display: flex;
+    }
+    .second-section .vertical{
+      height: 9.3rem;
+      width: 1px;
+      background-color: #fff;
+      margin: 0 10rem;
+    }
+    .img-top{
+      width: 2.3rem;
+      position: relative;
+      top: -32px;
+      left: -9px;
+    }
+    .vertical-title{
+      position: relative;
+      top: 7.5rem;
+      width: 15rem;
+    }
+    .vertical-desc{
+      position: relative;
+      top: 8.6rem;
+      color: #888;
+      width: 15rem;
+      font-size: 0.9rem;
+    }
+
+    footer{
+      background-color: #0e0e1a;
+      /*height: 23rem;*/
+    }
+    .footer{
+      display: flex;
+      padding: 2.3rem 12rem;
+      justify-content: space-evenly;
+    }
+
+    .footer ul{
+      list-style: none;
+    }
+    .footer > div{
+      width: 23rem;
+    }
+
+    footer .footer-rights{
+      text-align: center;
+      color: #888;
+      padding: 1.2rem 0;
+    }
   </style>
 </head>
 <body>
@@ -113,7 +187,10 @@
         <div>and I am a passionate</div>
         <div>Web Developer</div>
         <span id="element"></span>
-
+        <div class="buttons">
+        <button class="btn">Download Resume</button>
+        <button class="btn">Visit Github</button>
+      </div>
       </div>
       <div class="right-section">
         <img src="/right-section-img.png" alt="">
@@ -121,10 +198,93 @@
     </section>
     <section class="second-section">
       <hr>
-      <h1>Past Experience</h1>
+      <span class="text-gray">What I have done so far</span>
+      <h1>Work Experience</h1>
+      <div class="box">
+        <div class="vertical">
+          <img class="img-top" src="/devloper.png" alt="">
+          <div class="vertical-title">
+            HTML Devloper (2010-2012)
+          </div>
+          <div class="vertical-desc">
+            Node.Js Devloper
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="img-top" src="/html-logo.png" alt="">
+          <div class="vertical-title">
+            HTML Devloper (2010-2012)
+          </div>
+          <div class="vertical-desc">
+            Node.Js Devloper
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="img-top" src="/devloper.png" alt="">
+          <div class="vertical-title">
+            HTML Devloper (2010-2012)
+          </div>
+          <div class="vertical-desc">
+            Node.Js Devloper
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="img-top" src="/devloper.png" alt="">
+          <div class="vertical-title">
+            HTML Devloper (2010-2012)
+          </div>
+          <div class="vertical-desc">
+            Node.Js Devloper
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="img-top" src="/devloper.png" alt="">
+          <div class="vertical-title">
+            HTML Devloper (2010-2012)
+          </div>
+          <div class="vertical-desc">
+            Node.Js Devloper
+          </div>
+        </div>
+        
+      </div>
     </section>
   </main>
-  
+   <footer>
+    <div class="footer">
+      <div class="footer-frist">
+        <h3>Toufik Devloper Portfolio</h3>
+      </div>
+      <div class="footer-second">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Cotact</li>
+        </ul>
+      </div>
+      <div class="footer-third">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Cotact</li>
+        </ul>
+      </div>
+      <div class="footer-fourth">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Cotact</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-rights">
+      Copyright © 2023 Designed and developed by Toufik. All rights reserved.
+    </div>
+   </footer>
+
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <script>
     var typed = new Typed('#element', {
