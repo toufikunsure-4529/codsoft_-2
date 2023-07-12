@@ -4,171 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Toufik - Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="queries.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Belanosima:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body{
-      background-color: #000021;
-      color: #fff;
-      font-family: 'Poppins', sans-serif;
-    }
 
-    html{
-      font-size: 10px;
-    }
-    .nav{
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      height: 8rem;
-      background-color: #000045;
-    }
-
-    .nav ul{
-      display: flex;
-      justify-content: center;
-
-    }
-    .nav ul li{
-      list-style: none;
-      margin: 0 2.3rem;
-    }
-    .nav ul li a{
-     text-decoration: none;
-     color: #fff;
-    }
-    .nav ul li a:hover{
-      color: rgb(153,153,226);
-      font-size: 1.06rem;
-     }
-     main hr{
-      border: 0;
-      background: #9c97f1;
-      height: 1.2px;
-      margin: 4rem -3.1rem;
-     }
-    .left{
-      font-size: 2.6rem;
-    }
-    .frist-section{
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin: 7rem 0;
-    }
-
-    .frist-section>div{
-      width: 30%;
-    }
-
-    .left-section{
-      font-size: 3.4rem;
-    }
-    .left-section .buttons{
-      padding: 5rem 0;
-    }
-    .left-section .btn{
-      padding: 1.2rem;
-      background-color: #1e2167;
-      color: #fff;
-      border: 2px solid #fff;
-      border-radius: 6px;
-      font-size: 2rem;
-      cursor: pointer;
-    }
-    .right-section img{
-      width: 80%;
-
-    }
-
-    .purple{
-      color: #b581e6;
-    }
-
-    #element{
-      color: #b581e6;
-
-    }
-    .second-section{
-      max-width: 80vw;
-      margin: auto;
-      height: 80vh;
-
-    }
-
-    .second-section h1{
-      font-size: 2.2rem;
-    }
-
-    .text-gray{
-      color: #888;
-    }
-    .second-section .box{
-      background: #fff;
-      width: 75vw;
-      height: 2px;
-      margin: 5.6rem 0;
-      display: flex;
-    }
-    .second-section .vertical{
-      height: 9.3rem;
-      width: 1px;
-      background-color: #fff;
-      margin: 0 10rem;
-    }
-    .img-top{
-      width: 2.3rem;
-      position: relative;
-      top: -32px;
-      left: -9px;
-    }
-    .vertical-title{
-      position: relative;
-      top: 7.5rem;
-      width: 15rem;
-    }
-    .vertical-desc{
-      position: relative;
-      top: 8.6rem;
-      color: #888;
-      width: 15rem;
-      font-size: 0.9rem;
-    }
-
-    footer{
-      background-color: #0e0e1a;
-      /*height: 23rem;*/
-    }
-    .footer{
-      display: flex;
-      padding: 2.3rem 12rem;
-      justify-content: space-evenly;
-    }
-
-    .footer ul{
-      list-style: none;
-    }
-    .footer > div{
-      width: 23rem;
-    }
-
-    footer .footer-rights{
-      text-align: center;
-      color: #888;
-      padding: 1.2rem 0;
-    }
-  </style>
 </head>
 <body>
   <header>
     <nav class="nav">
-      <div class="left">Toufik Portfolio</div>
+      <div class="left">Toufik's Portfolio</div>
       <div class="right">
         <ul>
           <li><a href="/">Home</a></li>
@@ -183,77 +29,103 @@
   <main>
     <section class="frist-section">
       <div class="left-section">
-        Hi, My Name is <span class="purple">Toufik</span>
-        <div>and I am a passionate</div>
-        <div>Web Developer</div>
+        <div>Heyy, My Name is <span class="purple">Toufik.</span></div>
+        <div>and I am a</div>
         <span id="element"></span>
         <div class="buttons">
-        <button class="btn">Download Resume</button>
-        <button class="btn">Visit Github</button>
+        <button  class="btn" onclick="downloadResume()">Download Resume</button>
+        <button class="btn" onclick="redirect()">Visit Github</button>
       </div>
       </div>
       <div class="right-section">
-        <img src="/right-section-img.png" alt="">
+        <img class="photo-frame" src="/My_Photo.png" alt="">
       </div>
     </section>
     <section class="second-section">
       <hr>
-      <span class="text-gray">What I have done so far</span>
       <h1>Work Experience</h1>
       <div class="box">
-        <div class="vertical">
-          <img class="img-top" src="/devloper.png" alt="">
-          <div class="vertical-title">
-            HTML Devloper (2010-2012)
-          </div>
-          <div class="vertical-desc">
-            Node.Js Devloper
-          </div>
+        <p>
+            Hey there!
+            <br>
+            I'm <span class="purple"><strong>Toufik sk</strong></span>, a 19-year-old I am web developer intern
+            at Codsoft, a passionate learner, and
+            a creative soul. I'm thrilled to have you on my portfolio website. Here, you'll get a glimpse into
+            my world as I explore the exciting realms of web development.
+            <br>
+            As a dedicated YouTuber, I share my knowledge, insights, and tutorials on my channel, giving back to
+            the amazing developer community that has inspired me. With a keen eye for design, I strive to create
+            visually stunning and user-friendly interfaces that leave a lasting impression.
+            <br>
+            Join me as I continue to grow, learn, and contribute to the ever-evolving world of web development.
+            Let's build the future together!
+            <br><br>
+            <strong>Welcome to my journey!!</strong><br><br>
+        </p>
+    </div>
+    
+    </section>
+    
+    <section class="second-section">
+      <hr>
+
+      <h1>Project</h1>
+      <div class="container">
+        <div class="project-box">
+          <div class="project-image">
+            <img src="guess_num.jpg" alt="">
         </div>
-        <div class="vertical">
-          <img class="img-top" src="/html-logo.png" alt="">
-          <div class="vertical-title">
-            HTML Devloper (2010-2012)
-          </div>
-          <div class="vertical-desc">
-            Node.Js Devloper
-          </div>
-        </div>
-        <div class="vertical">
-          <img class="img-top" src="/devloper.png" alt="">
-          <div class="vertical-title">
-            HTML Devloper (2010-2012)
-          </div>
-          <div class="vertical-desc">
-            Node.Js Devloper
-          </div>
-        </div>
-        <div class="vertical">
-          <img class="img-top" src="/devloper.png" alt="">
-          <div class="vertical-title">
-            HTML Devloper (2010-2012)
-          </div>
-          <div class="vertical-desc">
-            Node.Js Devloper
-          </div>
-        </div>
-        <div class="vertical">
-          <img class="img-top" src="/devloper.png" alt="">
-          <div class="vertical-title">
-            HTML Devloper (2010-2012)
-          </div>
-          <div class="vertical-desc">
-            Node.Js Devloper
-          </div>
-        </div>
-        
+        <div class="project-description">
+          <h1>Food Delivery</h1>
+          <span class="link-project"><a href="https://github.com/toufikunsure-4529/omnifood-frontend-app"
+                  target="_blank">Get Source Code&#8594;</a></span>
+          <p class="text-project">This is my Html Css Javascript project, which is Food Delivery Frontend App
+               You can order food Buy Contact us Get offer</p>
       </div>
+    </div>
+    <div class="project-box">
+      <div class="project-image">
+        <img src="guess_num.jpg" alt="">
+    </div>
+    <div class="project-description">
+      <h1>Food Delivery</h1>
+      <span class="link-project"><a href="https://github.com/toufikunsure-4529/omnifood-frontend-app"
+              target="_blank">Get Source Code&#8594;</a></span>
+      <p class="text-project">This is my Html Css Javascript project, which is Food Delivery Frontend App
+           You can order food Buy Contact us Get offer</p>
+  </div>
+</div>
+<div class="project-box">
+  <div class="project-image">
+    <img src="guess_num.jpg" alt="">
+</div>
+<div class="project-description">
+  <h1>Food Delivery</h1>
+  <span class="link-project"><a href="https://github.com/toufikunsure-4529/omnifood-frontend-app"
+          target="_blank">Get Source Code&#8594;</a></span>
+  <p class="text-project">This is my Html Css Javascript project, which is Food Delivery Frontend App
+       You can order food Buy Contact us Get offer</p>
+</div>
+</div>
+<div class="project-box">
+  <div class="project-image">
+    <img src="guess_num.jpg" alt="">
+</div>
+<div class="project-description">
+  <h1>Food Delivery</h1>
+  <span class="link-project"><a href="https://github.com/toufikunsure-4529/omnifood-frontend-app"
+          target="_blank">Get Source Code&#8594;</a></span>
+  <p class="text-project">This is my Html Css Javascript project, which is Food Delivery Frontend App
+       You can order food Buy Contact us Get offer</p>
+</div>
+</div>
+</div>
     </section>
   </main>
    <footer>
     <div class="footer">
       <div class="footer-frist">
-        <h3>Toufik Devloper Portfolio</h3>
+      <div class="left">Toufik's Portfolio</div>
       </div>
       <div class="footer-second">
         <ul>
@@ -286,11 +158,6 @@
    </footer>
 
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  <script>
-    var typed = new Typed('#element', {
-      strings: ['Web Developer', 'Web Designer','Frontend-Developer'],
-      typeSpeed: 50,
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>

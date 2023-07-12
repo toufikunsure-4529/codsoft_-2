@@ -1,0 +1,222 @@
+  @import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  /* background-color: #000021; */
+  color: #000021;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to top left,#7dd56f, #28b487);
+
+}
+
+html{
+  font-size: 10px;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8rem;
+  background-color: #2b8669;
+}
+
+.nav ul{
+  display: flex;
+  justify-content: center;
+
+}
+.nav ul li{
+  list-style: none;
+  margin: 0 2.3rem;
+  font-size: 1.8rem;
+
+}
+.nav ul li a{
+ text-decoration: none;
+ color: #fff;
+}
+.nav ul li a:hover{
+  color: rgb(153,153,226);
+ }
+ main hr{
+  border: 0;
+  background: #000021;
+  height: 1.2px;
+  margin: 4rem -3.1rem;
+ }
+.left{
+  font-size: 3.6rem;
+  font-family: 'Bacasime Antique', serif;
+  color: #fff;
+}
+.frist-section{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 7rem 0;
+}
+
+.frist-section>div{
+  width: 30%;
+}
+
+.left-section{
+  font-size: 3.4rem;
+}
+.left-section .buttons{
+  padding: 5rem 0;
+}
+.left-section .btn{
+  padding: 1.2rem;
+  background-color: #1e2167;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.right-section img{
+  width: 80%;
+
+}
+
+.purple{
+  color: red;
+}
+
+#element{
+  color: #fff;
+
+}
+.second-section{
+  max-width: 80vw;
+  margin: auto;
+  height: 80vh;
+
+}
+
+.second-section h1{
+  font-size: 2.2rem;
+}
+
+.text-gray{
+  color: #0e0e1a;
+}
+.second-section .box{
+  background: #000021;
+  width: 75vw;
+  height: 2px;
+  margin: 3.6rem 0;
+  display: flex;
+  font-size: 2rem;
+}
+.second-section .vertical{
+  height: 9.3rem;
+  width: 1px;
+  background-color: #000021;
+  margin: 0 6vw;
+}
+.img-top{
+  width: 2.3rem;
+  position: relative;
+  top: -32px;
+  left: -9px;
+}
+.vertical-title{
+  position: relative;
+  top: 7.5rem;
+  width: 15rem;
+}
+.vertical-desc{
+  position: relative;
+  top: 8.6rem;
+  color: #000021;
+  width: 15rem;
+  font-size: 0.9rem;
+}
+
+footer{
+  background-color: #0e0e1a;
+  /*height: 23rem;*/
+  color: #fff;
+
+}
+.footer{
+  display: flex;
+  padding: 2.3rem 12rem;
+  justify-content: space-evenly;
+}
+
+.footer ul{
+  list-style: none;
+}
+.footer ul li{
+  font-size: 1.6rem;
+}
+.footer > div{
+  width: 23rem;
+}
+
+footer .footer-rights{
+  text-align: center;
+  color: #888;
+  padding: 1.2rem 0;
+}
+
+.photo-frame {
+  border: 5px solid #ccc;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 100%;
+}
+
+.photo-frame img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.my-name{
+  font-size: 1rem;
+}
+.third-section h1{
+  font-size: 2.2rem;
+
+}
+
+.project-description h1{
+  font-size: 2.2rem;
+
+}
+.project-description a{
+  font-size: 2.2rem;
+  font-family: 'Bacasime Antique', serif;
+  color: #ccc;
+  font-weight: 600;
+  text-decoration: none;
+}
+.project-description p{
+  font-size: 1.8rem;
+
+}
+.project-description{
+  transition: all 0.45s;
+  padding: 4rem 2rem;
+  margin-top: 2rem;
+  background-color: #000021;
+  color: #ccc;
+  border-radius: 10px;
+  width: 80vh;
+}
+.project-description:hover{
+  border: 2px solid #000021;
+  box-shadow: 0 2.4rem 4.8rem #000045;
+  transform: scale(1.1);
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
