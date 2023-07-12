@@ -209,7 +209,7 @@ footer .footer-rights{
   background-color: #000021;
   color: #ccc;
   border-radius: 10px;
-  width: 80vh;
+  margin-left: 2rem;
 }
 .project-description:hover{
   border: 2px solid #000021;
