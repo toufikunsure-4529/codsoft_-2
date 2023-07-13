@@ -14,6 +14,7 @@ body{
 
 html{
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 .nav{
@@ -49,8 +50,18 @@ html{
   margin: 4rem -3.1rem;
  }
 .left{
-  font-size: 3.6rem;
+  font-size: 3rem;
   font-family: 'Bacasime Antique', serif;
+  color: #fff;
+  cursor: pointer;
+}
+.left:hover{
+  color: #7dd56f;
+}
+.left span{
+  color: red;
+}
+.left span:hover{
   color: #fff;
 }
 .frist-section{
@@ -146,9 +157,11 @@ footer{
 
 }
 .footer{
-  display: flex;
   padding: 10rem 12rem;
-  justify-content: space-evenly;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .footer ul{
@@ -158,8 +171,8 @@ footer{
   font-size: 1.6rem;
 }
 .footer > div{
-  width: 23rem;
-}
+    margin-left: 3rem;
+  }
 
 footer .footer-rights{
   text-align: center;
@@ -224,7 +237,69 @@ footer .footer-rights{
 }
 .third-section{
   max-width: 80vw;
-  margin: 5rem auto;
+  margin: 0 auto;
   height: 80vh;
   margin-bottom: 13rem;
 }
+.footer ul li a img{
+  width: 50px;
+  transition: ease 0.344s;
+}
+.footer ul li a img:hover{
+  transform: scale(1.2);
+}
+.subscribe{
+  background-color: #fafcff;
+}
+
+
+
+.subscribe-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe-form form{
+  width: 100%;
+  max-width: 40rem;
+  display: flex;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8rem;
+}
+
+.subscribe-form input{
+  width: 100%;
+  padding: 1.8rem;
+  outline: none;
+  border: none;
+  border-radius: 8rem;
+  font-size: 1.6rem;
+}
+.btn{
+  padding: 1.6rem 3.2rem;
+  outline: none;
+  border: none;
+  font-size: 1.6rem;
+  color: #ffffff;
+  background-color: #28b487;
+  border-radius: 8rem;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.btn:hover{
+  background-color: #214479;
+  /* padding: 1.8rem 4rem; */
+}
+.second-section h1{
+  color: #214479;
+}
+.second-section .skill-box{
+  background: #000021;
+  width: 75vw;
+  height: 2px;
+  margin: 3.6rem 0;
+  font-size: 2rem;
+}
+
