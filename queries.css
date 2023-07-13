@@ -15,7 +15,7 @@
   .nav{
     flex-direction: column;
   }
-  .frist-section{
+  /* .frist-section{
     flex-direction: column-reverse;
   }
   .left-section{
@@ -25,14 +25,18 @@
     justify-content: center;
     align-items: center;
   }
-
+  .right-section{
+    width: 721px !important;
+    display: flex;
+    justify-content: center;
+  }
   .right-section img{
     width: 45%;
     margin-bottom: 73px;
   }
   .img-top{
     top:133px
-  }
+  } */
 
   .second-section{
     display: flex;
