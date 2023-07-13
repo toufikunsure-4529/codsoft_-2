@@ -10,6 +10,7 @@ body{
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(to top left,#7dd56f, #28b487);
 
+
 }
 
 html{
@@ -23,6 +24,7 @@ html{
   align-items: center;
   height: 8rem;
   background-color: #2b8669;
+
 }
 
 .nav ul{
