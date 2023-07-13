@@ -147,7 +147,7 @@ footer{
 }
 .footer{
   display: flex;
-  padding: 2.3rem 12rem;
+  padding: 10rem 12rem;
   justify-content: space-evenly;
 }
 
@@ -210,13 +210,21 @@ footer .footer-rights{
   color: #ccc;
   border-radius: 10px;
   margin-left: 2rem;
+  cursor: pointer;
 }
 .project-description:hover{
   border: 2px solid #000021;
   box-shadow: 0 2.4rem 4.8rem #000045;
   transform: scale(1.1);
+
 }
 .container{
   display: grid;
   grid-template-columns: repeat(2,1fr);
+}
+.third-section{
+  max-width: 80vw;
+  margin: 13rem auto;
+  height: 80vh;
+
 }
