@@ -58,6 +58,7 @@
     width: 100vw;
     display: flex;
     font-size: 2rem;
+    text-align: left;
   }
   
 }
