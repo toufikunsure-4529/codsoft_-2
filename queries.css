@@ -56,7 +56,6 @@
   .second-section .box{
     background: #000021;
     width: 100vw;
-    height: 2px;
     display: flex;
     font-size: 2rem;
   }
