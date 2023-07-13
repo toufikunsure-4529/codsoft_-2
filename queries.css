@@ -15,7 +15,7 @@
   .nav{
     flex-direction: column;
   }
-  /* .frist-section{
+  .frist-section{
     flex-direction: column-reverse;
   }
   .left-section{
@@ -36,7 +36,7 @@
   }
   .img-top{
     top:133px
-  } */
+  }
 
   .second-section{
     display: flex;
@@ -57,7 +57,6 @@
     background: #000021;
     width: 100vw;
     height: 2px;
-    margin: 3.6rem 0;
     display: flex;
     font-size: 2rem;
   }
