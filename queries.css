@@ -59,5 +59,15 @@
     display: flex;
     font-size: 2rem;
   }
+  .subscribe-form input{
+    width: 100%;
+
+    padding-left: 16.8rem;
+   outline: none;
+    border: none;
+    border-radius: 8rem;
+    font-size: 1.6rem;
+  }
+
   
 }
