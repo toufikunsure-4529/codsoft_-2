@@ -19,9 +19,9 @@
   .nav{
     flex-direction: column;
   }
-  /* .frist-section{
+  .frist-section{
     flex-direction: column-reverse;
-  } */
+  }
   .left-section{
     width: 100% !important;
     display: flex;
