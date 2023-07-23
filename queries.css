@@ -1,4 +1,4 @@
-@media screen and (max-width:57em){
+@media(max-width:57em){
   body{
     background: #000021;
     color: #fafcff;
@@ -66,7 +66,7 @@
  
   
 }
-@media screen and (max-width:23em){
+@media(max-width:23em){
   .second-section .box{
     background: #000021;
     width: 100vw;
@@ -76,3 +76,4 @@
   }
  
 }
+
