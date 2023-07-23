@@ -1,4 +1,4 @@
-@media(max-width:70em){
+@media screen and (max-width:57em){
   body{
     background: #000021;
     color: #fafcff;
@@ -64,17 +64,9 @@
     font-size: 2rem;
   }
  
-  .second-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 34vh;
+  
 }
-.second-section p {
-  margin-top: 1rem;
-}
-}
-@media(max-width:23em){
+@media screen and (max-width:23em){
   .second-section .box{
     background: #000021;
     width: 100vw;
@@ -84,4 +76,3 @@
   }
  
 }
-
