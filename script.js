@@ -15,3 +15,18 @@ function downloadResume() {
   link.target = '_blank';
   link.click();
 }
+
+
+// tab about section
+var tablink = document.getElementsByClassName("tab-link");
+var tabcontent = document.getElementsByClassName("tab-content");
+function opentab(tabname) {
+  for (tablinke of tablink) {
+    tablinke.classList.remove("active-link");
+  }
+  for (tabcontente of tabcontent) {
+    tabcontente.classList.remove("active-tab");
+  }
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab");
+}

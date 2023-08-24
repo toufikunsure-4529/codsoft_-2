@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta property="og:title"
-      content="Myrtis Beaverdam | Front End Web Developer" />
+      content="Toufik Sk | Front End Web Developer" />
     <meta property="og:description" content="JavaScript wizard, chaotic good" />
     <meta property="og:image"
       content="http://toufikportfolio.netlify.app/My_Photo.png" />
     <meta property="og:url" content="http://toufikportfolio.netlify.app/" />
     <meta property="og:type" content="website" />
     <title>Toufik - Developer Portfolio</title>
-    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="queries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +22,7 @@
   <body>
     <header>
       <nav class="nav">
-        <div class="left">Toufik's Portfolio</div>
+        <div class="logo"><p>Toufik's <span>Portfolio</span></p></div>
         <div class="right">
           <ul>
             <li><a href="/">Home</a></li>
@@ -37,7 +37,7 @@
     <main>
       <section class="frist-section">
         <div class="left-section">
-          <div>Hey there! I'm, <span class="purple">Toufik.</span></div>
+          <div class="frist-section-text">Hey there! I'm, <span class="purple">Toufik.</span></div>
           <div>and I am a</div>
           <span id="element"></span>
           <div class="buttons">
@@ -49,10 +49,10 @@
           <img class="photo-frame" src="/My_Photo.png" alt>
         </div>
       </section>
+
       <section class="second-section" id="about">
-        <hr>
-        <h1>About Me:</h1>
-        <div class="box">
+        <div class="section-container">
+        <h2>About Me:</h2>
           <p>
             Hey there!
             <br>
@@ -78,46 +78,51 @@
             ever-evolving world of web development.
             Let's build the future together!
             <br><br>
-            <strong>Welcome to my journey!!</strong><br><br>
+            <div class="tab-title">
+              <p class="tab-link active-link" onclick="opentab('skill')">
+                Skill
+              </p>
+              <p class="tab-link" onclick="opentab('experiens')">Experience</p>
+              <p class="tab-link" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-content active-tab" id="skill">
+              <ul>
+                <li><span>Web Desing</span><br />E-Commers ,and more</li>
+                <li>
+                  <span>Web developer</span><br />
+                  Tech and IT Services
+                </li>
+                <li><span>UX/UI</span><br />User experience,User interface</li>
+              </ul>
+            </div>
+            <div class="tab-content" id="experiens">
+              <ul>
+                <li><span>UX/UI</span><br />Good knowledge</li>
+                <li><span>Web Desing</span><br />Intern at CodSoft</li>
+                <li>
+                  <span>Programming</span><br />C,Python,JavaScript,,DSA,DBMS( Core
+                  knowledge)
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="Education">
+              <ul>
+                <li><span>Diploma in Computer Science and Technology</span><br />Dumkal Polytechnic</li>
+                <li><span>12th</span><br />Hariharpara High School(H.S)</li>
+                <li><span>10th</span><br />Hariharpara High School(H.S)</li>
+              </ul>
+            </div>
           </p>
-        </div>
-
+          
+      </div>
+      <div class="second-section-img">
+        <img class="second-section-img" src="/My_Photo.png" alt>
+      </div>
       </section>
-      <section class="second-section" id="skill">
-        <hr>
-        <h1>Skills:</h1>
-        <div class="box">
-          <p><strong>HTML:</strong> As a front-end developer, I have a strong
-            command of HTML, which enables me to create the structure and layout
-            of web pages effectively. I am proficient in writing semantic and
-            accessible HTML code.</p>
-          <p><strong>CSS:</strong>I possess a deep understanding of CSS and its
-            various properties, which enables me to style web pages and create
-            visually appealing designs. I am skilled in responsive design, CSS
-            frameworks, and pre-processors like SASS</p>
-          <p><strong>JavaScript:</strong>With my knowledge of JavaScript, I can
-            develop interactive and dynamic web applications. I am experienced
-            in using JavaScript frameworks such as React.js and jQuery to
-            enhance user experiences and build robust front-end solutions. </p>
-          <p><strong>Bootstrap:</strong>I am well-versed in utilizing the
-            Bootstrap framework to create responsive and mobile-first websites.
-            This allows me to quickly prototype and develop professional-looking
-            interfaces.
-
-          </p>
-          <p><strong>C Programming:</strong>My foundation in C programming has
-            provided me with a strong understanding of programming concepts,
-            algorithms, and data structures. I am capable of developing
-            efficient and optimized code.
-          </p>
-        </div>
-
-      </section>
-
+    
       <section class="third-section" id="project">
-        <hr>
-
-        <h1>Project</h1>
+        <div class="third-section-container">
+        <h2>My Work</h2>
         <div class="container">
           <div class="project-box">
             <div class="project-image">
@@ -176,13 +181,14 @@
             </div>
           </div>
         </div>
+      </div>
       </section>
 
     </main>
     <footer>
       <div class="footer" id="contact-me">
         <div class="footer-frist">
-          <div class="left"><p>Toufik's <span>Portfolio</span></p></div>
+          <div class="logo"><p>Toufik's <span>Portfolio</span></p></div>
         </div>
         <div class="footer-second">
           <ul>
@@ -206,13 +212,18 @@
         <div class="footer-fourth">
           <div class="subscribe-form">
             <form id='Support-Form' method='post' name='Subscription Email'
-              netlify><input type='hidden' name='form-name'
-                value='Subscription Email' />
-              <input type="email" name="email" placeholder="Your email here"
+              netlify>
+                <input type="text" name="name" placeholder="Enter Your Name"
                 required>
+                <input type="email" name="email" placeholder="Your email here"
+                required>
+                <textarea type="text" name="massage" placeholder="Your Massage"
+                required></textarea>
               <button class="btn" type="submit">Send</button>
+
             </form>
           </div>
+
         </div>
 
       </div>
