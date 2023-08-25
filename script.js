@@ -5,7 +5,7 @@ var typed = new Typed('#element', {
 });
 
 function redirect() {
-  window.open("https://github.com/toufikunsure-4529", '_blank');
+  window.open("https:github.com/toufikunsure-4529", '_blank');
 }
 
 function downloadResume() {
@@ -18,7 +18,7 @@ function downloadResume() {
 }
 
 
-// tab about section
+//  tab about section
 var tablink = document.getElementsByClassName("tab-link");
 var tabcontent = document.getElementsByClassName("tab-content");
 function opentab(tabname) {
@@ -31,3 +31,6 @@ function opentab(tabname) {
   event.currentTarget.classList.add("active-link");
   document.getElementById(tabname).classList.add("active-tab");
 }
+
+
+

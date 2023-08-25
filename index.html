@@ -229,15 +229,14 @@
         <div class="footer-fourth">
           <h2>Contact Me</h2><br>
           <div class="subscribe-form">
-            <form id='Support-Form' method='post' name='Subscription Email' 
-              netlify>
-                <input type="text" name="name" placeholder="Enter Your Name"
+            <form for='Support-Form' method="post"  name='Portfolio User Massage' netlify>
+                <input type="text" name="name" placeholder="Enter Your Name" id="name"
                 required>
-                <input type="email" name="email" placeholder="Your email here"
+                <input type="email" name="email" placeholder="Your email here" id="email"
                 required>
-                <textarea type="text" name="massage" placeholder="Your Massage"
+                <textarea type="text" name="massage" placeholder="Your Massage" id="massage"
                 required></textarea>
-              <button class="btn" type="submit">Send</button>
+              <button class="btn" type="submit" id="btn" onclick="showMsg()">Send</button>
 
             </form>
           </div>
