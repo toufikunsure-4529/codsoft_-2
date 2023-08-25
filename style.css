@@ -67,7 +67,9 @@ html{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: darkslategrey;
+  /* background-color: darkslategrey; */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), darkslategrey);
+
   padding-bottom: 30px;
 }
 
@@ -97,6 +99,8 @@ html{
   margin: 20px 0;
   /* background-image: linear-gradient(to right, #f6b73c, rgb(77, 77, 65)); */
   background-color: #1A212A;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), darkcyan);
+
 
 }
 /* Button */
@@ -107,6 +111,7 @@ html{
   font-size: 1.6rem;
   color: #ffffff;
   background-color: firebrick;
+
   border-radius: 8rem;
   cursor: pointer;
   transition: all 0.4s;
@@ -122,15 +127,18 @@ html{
 .section-container{
   padding: 20px 120px;
   font-size: 12px;
-  background-color: darkcyan;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), darkcyan);
+
+
 }
+
 .second-section{
   display: flex;
 
 }
 .second-section-img{
+  width: 100%;
   background-color: #1A212A;
-  cursor: pointer;
 }
 
 
@@ -193,7 +201,8 @@ html{
 .third-section-container{
   padding: 20px 120px;
   font-size: 12px;
-  background-color: darkslategrey;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), darkslategrey);
+
 }
 
 
@@ -211,23 +220,25 @@ html{
   text-decoration: none;
 }
 .project-description p{
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 
 }
 .project-description{
-  transition: all 0.45s;
+  transition: all 0.6s;
   padding: 4rem 2rem;
   margin-top: 2rem;
-  background-color: #000021;
+  background-color: #262626;
   color: #ccc;
   border-radius: 10px;
   margin-left: 2rem;
   cursor: pointer;
 }
 .project-description:hover{
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
   border: 2px solid #000021;
   box-shadow: 0 2.4rem 4.8rem #000045;
   transform: scale(1.1);
+  
 
 }
 .container{
@@ -236,12 +247,9 @@ html{
   
 }
 
-
-
-
 /* footer section */
 footer{
-  background-color: #0e0e1a;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #0e0e1a);
   /*height: 23rem;*/
   color: #fff;
 }
@@ -304,19 +312,23 @@ footer .footer-rights{
 }
 
 .subscribe-form input,textarea{
-  width: 100%;
+  width: 415px;
   border: 0;
   outline: navajowhite;
   background: #262626;
   padding: 15px;
   color: #fff;
-  font-size: 10px;
+  font-size: 12px;
   border-radius: 6px;
 }
+.subscribe-form textarea{
+  height: 130px;
+  width: 415px;
+}
+
 .subscribe-form{
   display: flex;
   flex-direction: column;
-
 }
 
 
