@@ -1,3 +1,4 @@
+
 var typed = new Typed('#element', {
   strings: ['Web Designer', 'Frontend-Developer', 'Web Developer'],
   typeSpeed: 50,

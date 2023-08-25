@@ -82,8 +82,15 @@
     grid-template-columns: repeat(1,1fr);
 }
 .second-section-img{
-
   display: none;
+}
+
+#element{
+  font-size: 10px;
+}
+.left-section{
+  font-size: 12px;
+  margin-left: 20px;
 }
 
 }
