@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta property="og:title"
-      content="Toufik Sk | Front End Web Developer" />
-    <meta property="og:description" content="JavaScript wizard, chaotic good" />
-    <meta property="og:image"
-      content="http://toufikportfolio.netlify.app/My_Photo.png" />
-    <meta property="og:url" content="http://toufikportfolio.netlify.app/" />
-    <meta property="og:type" content="website" />
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE-edge">
+    <meta name="description" content="Devloper Portfolio, chaotic good">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Toufik Sk | Front End Web Developer" />
+    <meta property="og:image"content="devloper.png" />
     <title>Toufik - Developer Portfolio</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
@@ -17,7 +16,6 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Belanosima:wght@400;700&family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet">
-
   </head>
   <body>
     <header>
@@ -27,7 +25,7 @@
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#skill">Skills</a></li>
+            <li><a href="#education">Skills</a></li>
             <li><a href="#project">Project</a></li>
             <li><a href="#contact-me">Contact Me</a></li>
           </ul>
@@ -46,7 +44,7 @@
           </div>
         </div>
         <div class="right-section">
-          <img class="photo-frame" src="/My_Photo.png" alt>
+          <img class="photo-frame" src="/My_Photo.png" alt="Toufik-Photos">
         </div>
       </section>
 
@@ -67,7 +65,7 @@
             <br>
             In summary, I am a dedicated and skilled professional with a strong
             educational background in computer science and technology. My
-            proficiency in HTML, CSS, JavaScript, Bootstrap, and C programming,
+            proficiency in HTML, CSS, JavaScript ,React ,Bootstrap , and C programming,DSA,JAVA,DBMS(SQL)
             coupled with my experience in developing projects, showcases my
             ability to create visually appealing and functional web
             applications. I am committed to continuous learning and staying
@@ -78,7 +76,7 @@
             ever-evolving world of web development.
             Let's build the future together!
             <br><br>
-            <div class="tab-title">
+            <div class="tab-title" id="education">
               <p class="tab-link active-link" onclick="opentab('skill')">
                 Skill
               </p>
@@ -100,7 +98,7 @@
                 <li><span>UX/UI</span><br />Good knowledge</li>
                 <li><span>Web Desing</span><br />Intern at CodSoft</li>
                 <li>
-                  <span>Programming</span><br />C,Python,JavaScript,,DSA,DBMS( Core
+                  <span>Programming</span><br />C,Python,JavaScript,React,DSA,DBMS(Core
                   knowledge)
                 </li>
               </ul>
@@ -115,8 +113,38 @@
           </p>
           
       </div>
-      <div class="second-section-img">
-        <img class="second-section-img" src="/My_Photo.png" alt>
+          <div class="second-section-img">
+            <div class="work">
+              <img src="https://source.unsplash.com/1600x900/?programmer" alt="programming photo"/>
+              <div class="layer">
+                <h3>Landing Page</h3>
+                <p>
+                  Developed a web application as part of a collaborative project in a development community.
+                </p>
+                <a href="http://colandingweb.netlify.app">See Project</a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="https://source.unsplash.com/1600x900/?resturant" alt="programming photo"/>
+              <div class="layer">
+                <h3>Food Delivery</h3>
+                <p>
+                  Contributed to the development of a Ecommerce website using modern front-end technologies.
+                </p>
+                <a href="https://omnifood-toufik.netlify.app">See Project</a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="https://source.unsplash.com/1600x900/?office" alt="programming photo"/>
+          <div class="layer">
+            <h3>Office Attendance Managment</h3>
+            <p>
+              Implemented various front-end technologies, including HTML, CSS, and JavaScript.
+            </p>
+            <a href="http://mywork-project.netlify.app">See Project</a>
+      </div>
+      
+    </div>
       </div>
       </section>
   
@@ -125,25 +153,19 @@
         <h2>My Work</h2>
         <div class="container">
           <div class="project-box">
-            <div class="project-image">
-              <img src="guess_num.jpg" alt>
-            </div>
+        
             <div class="project-description">
-              <h1>Food Delivery Project:</h1>
+              <h3>Food Delivery Project:</h3>
               <span class="link-project"><a
                   href="https://github.com/toufikunsure-4529/omnifood-frontend-app"
                   target="_blank">Get Source Code&#8594;</a></span>
-              <p class="text-project">Contributed to the development of a food
-                delivery website using modern front-end technologies.
-                Collaborated with a team to create an user interface.</p>
+              <p class="text-project">Contributed to the development of a Ecommerce website using modern front-end technologies. create an user interface.</p>
             </div>
           </div>
           <div class="project-box">
-            <div class="project-image">
-              <img src="guess_num.jpg" alt>
-            </div>
+       
             <div class="project-description">
-              <h1>Office Attendance Managment System</h1>
+              <h3>Office Attendance Managment System</h3>
               <span class="link-project"><a
                   href="https://github.com/toufikunsure-4529/Frontend-Activity-Project"
                   target="_blank">Get Source Code&#8594;</a></span>
@@ -153,12 +175,9 @@
             </div>
           </div>
           <div class="project-box">
-            <div class="project-image work">
-              <img src="guess_num.jpg" alt>
-              
-            </div>
+           
             <div class="project-description">
-              <h1>Ecommerce landing page</h1>
+              <h3>Ecommerce landing page</h3>
               <span class="link-project"><a
                   href="https://github.com/toufikunsure-4529/codsoft_-1"
                   target="_blank">Get Source Code&#8594;</a></span>
@@ -168,11 +187,8 @@
             </div>
           </div>
           <div class="project-box">
-            <div class="project-image">
-              <img src="guess_num.jpg" alt>
-            </div>
             <div class="project-description">
-              <h1>Live Dev Portfolio</h1>
+              <h3>Live Dev Portfolio</h3>
               <span class="link-project"><a
                   href="https://github.com/toufikunsure-4529/codsoft_-2"
                   target="_blank">Get Source Code&#8594;</a></span>
@@ -195,19 +211,19 @@
         <div class="footer-second">
           <ul>
             <li><a target="_blank" href="https://www.linkedin.com/in/toufik-sk/"><img
-                  src="linkedin.png" alt></a></li>
+                  src="linkedin.png" alt="Linkden-logo"></a></li>
           </ul>
         </div>
         <div class="footer-third">
           <ul>
             <li><a target="_blank" href="https://github.com/toufikunsure-4529">
-                <img src="github.png"></a></li>
+                <img src="github.png" alt="Github-logo"></a></li>
 
           </ul>
         </div>
         <div class="footer-fourth">
           <ul>
-            <li><a target="_blank" href="/"><img src="twitter.png" alt></a></li>
+            <li><a target="_blank" href="/"><img src="twitter.png" alt="Twitter Logo"></a></li>
           </ul>
 
         </div>

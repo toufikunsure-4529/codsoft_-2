@@ -142,6 +142,56 @@ html{
 }
 
 
+.work {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.work img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 01s;
+}
+
+.layer {
+  height: 0;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: 0.9s;
+}
+
+.layer h3 {
+  font-weight: 500;
+}
+
+.layer a {
+  color: antiquewhite;
+}
+
+.work:hover img {
+  transform: scale(1.1);
+}
+
+.work:hover .layer {
+  height: 100%;
+}
+
+
+
 .second-section h2{
   font-size: 40px;
 }
@@ -164,7 +214,7 @@ html{
   position: relative;
 }
 
-.tab-link::after {
+.tab-link::after{
   content: '';
   width: 0;
   height: 3px;
@@ -174,6 +224,7 @@ html{
   bottom: -8px;
   transition: 0.5s;
 }
+
 
 .tab-link.active-link::after {
   width: 50%;
@@ -202,7 +253,6 @@ html{
   padding: 20px 120px;
   font-size: 12px;
   background: linear-gradient(rgba(0, 0, 0, 0.6), darkslategrey);
-
 }
 
 
@@ -215,12 +265,18 @@ html{
 .project-description a{
   font-size: 2.2rem;
   font-family: 'Bacasime Antique', serif;
-  color: #ccc;
+  color: darkcyan;
   font-weight: 600;
   text-decoration: none;
+
 }
 .project-description p{
-  font-size: 1.6rem;
+  font-size: 14px;
+
+}
+.project-description h3{
+  font-size: 16px;
+  color: lightcyan;
 
 }
 .project-description{
