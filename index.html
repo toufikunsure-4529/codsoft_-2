@@ -2,274 +2,230 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="IE-edge">
-    <meta name="description" content="Toufik Portfolio, chaotic good">
-    <meta property="og:title" content="Toufik Sk | Front End Web Developer" />
-    <meta property="og:image" content="icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+    content="Explore Toufik SK's impressive Frontend Developer portfolio, showcasing a mastery of web development. Dive into a world of sleek designs, seamless user experiences, and cutting-edge technologies. Elevate your digital presence with a skilled professional who brings innovation to every project. Discover the power of code with Toufik SK, your go-to Frontend Developer for transforming ideas into captivating online experiences.">
+    <meta name="keywords" content="Toufik SK, Frontend Developer, Web Development, UI/UX Design, JavaScript, HTML, CSS, Responsive Design, Portfolio, Coding, Web Design, User Interface, User Experience, Creative Development, Digital Innovation">
+    <meta name="author" content="Toufik">
+    <meta property="og:title" content="Toufik SK - Frontend Developer Portfolio | Web Design, UI/UX, and Creative Development">
+    <meta property="og:image" content="/public/img/port-4.jpg" />
     <meta name="google-site-verification"
-      content="9m4jSNYwlsHvJfDvDZRTi4L4n2eh2o8Vz4ObvTiEeLQ" />
-    <title>Toufik - Developer Portfolio</title>
-    <link rel="shortcut icon" href="/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/queries.css">
+    content="9m4jSNYwlsHvJfDvDZRTi4L4n2eh2o8Vz4ObvTiEeLQ" />
+
+    <title>Toufik Sk - A Frontend Web Devloper</title>
+    <link rel="shortcut icon" href="/public/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Belanosima:wght@400;700&family=Poppins:wght@400;600;700&display=swap"
-      rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav class="nav">
-        <div class="logo"><p>Toufik's <span>Portfolio</span></p></div>
-        <div class="right">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Skills</a></li>
-            <li><a href="#project">Project</a></li>
-            <li><a href="#contact-me">Contact Me</a></li>
-          </ul>
-        </div>
-      </nav>
+
+    <!-- HEADER PAGE -->
+    <header class="header">
+      <a href="#" class="logo">Toufik <span>Developer</span></a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+      <ul class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Connect</a></li>
+      </ul>
+      <div class="top-btn">
+        <a href="#contact" class="header-btn">Contact me</a>
+      </div>
     </header>
+
+
     <main>
-      <section class="frist-section">
-        <div class="left-section">
-          <div class="frist-section-text">Hey there! I'm, <span class="purple">Toufik.</span></div>
-          <div>and I am a</div>
-          <span id="element"></span>
-          <div class="buttons">
-            <button class="btn" onclick="downloadResume()">Download Resume</button>
-            <button class="btn" onclick="redirect()">Visit Github</button>
-          </div>
-        </div>
-        <div class="right-section">
-          <img class="photo-frame" src="/My_Photo.png" alt="Toufik-Photos">
-        </div>
-      </section>
+      <!-- HERO SECTION -->
+      <section class="hero" id="home">
+        <div class="main-content" data-aos="fade-in">
+          <h4>Hey there!</h4>
+          <h1>I'm,<span>Toufik Sk</span></h1>
+          <p>Join me as I continue to grow, learn, and contribute to the ever-evolving world of web development. Let's build the future together!</p>
 
-      <section class="second-section" id="about">
-        <div class="section-container">
-          <h2>About Me:</h2>
-          <p>
-            Hey there!
-            <br>
-            I'm <span class="purple"><strong>Toufik sk</strong></span>, a
-            19-year-old a dedicated and enthusiastic individual with a passion
-            for technology and a strong desire to contribute to the field of
-            computer science. I have always been intrigued by the ever-evolving
-            nature of technology and its impact on various aspects of our lives.
-            Through my academic journey and practical experiences, I have
-            developed a diverse skill set that allows me to excel in software
-            development and web technologies.
-            <br>
-            In summary, I am a dedicated and skilled professional with a strong
-            educational background in computer science and technology. My
-            proficiency in HTML, CSS, JavaScript ,React ,Bootstrap , and C
-            programming,DSA,JAVA,DBMS(SQL)
-            coupled with my experience in developing projects, showcases my
-            ability to create visually appealing and functional web
-            applications. I am committed to continuous learning and staying
-            updated with the latest industry trends to contribute effectively to
-            a company's success.
-            <br>
-            Join me as I continue to grow, learn, and contribute to the
-            ever-evolving world of web development.
-            Let's build the future together!
-            <br><br>
-            <div class="tab-title" id="education">
-              <p class="tab-link active-link" onclick="opentab('skill')">
-                Skill
-              </p>
-              <p class="tab-link" onclick="opentab('experiens')">Experience</p>
-              <p class="tab-link" onclick="opentab('Education')">Education</p>
-            </div>
-            <div class="tab-content active-tab" id="skill">
-              <ul>
-                <li><span>Web Desing</span><br />E-Commers ,and more</li>
-                <li>
-                  <span>Web developer</span><br />
-                  Tech and IT Services
-                </li>
-                <li><span>UX/UI</span><br />User experience,User interface</li>
-              </ul>
-            </div>
-            <div class="tab-content" id="experiens">
-              <ul>
-                <li><span>UX/UI</span><br />Good knowledge</li>
-                <li><span>Web Desing</span><br />Intern at CodSoft</li>
-                <li>
-                  <span>Programming</span><br />C,Python,JavaScript,React,DSA,DBMS(Core
-                  knowledge)
-                </li>
-              </ul>
-            </div>
-            <div class="tab-content" id="Education">
-              <ul>
-                <li><span>Diploma in Computer Science and Technology</span><br />Dumkal
-                  Polytechnic</li>
-                <li><span>12th</span><br />Hariharpara High School(H.S)</li>
-                <li><span>10th</span><br />Hariharpara High School(H.S)</li>
-              </ul>
-            </div>
-          </p>
-
-        </div>
-        <div class="second-section-img">
-          <div class="work">
-            <img src="https://source.unsplash.com/1600x900/?programmer"
-              alt="programming photo" />
-            <div class="layer">
-              <h3>Landing Page</h3>
-              <p>
-                Developed a web application as part of a collaborative project
-                in a development community.
-              </p>
-              <a href="http://colandingweb.netlify.app">See Project</a>
-            </div>
+          <div class="social-link">
+            <a href="https://www.facebook.com/toufiksk4529" target="_blank"><i class="ri-facebook-fill"></i></a>
+            <a href="https://github.com/toufikunsure-4529" target="_blank"><i class="ri-github-fill"></i></i></a>
+            <a href="https://twitter.com/unsure_toufik" target="_blank"><i class="ri-twitter-x-fill"></i></a>
+            <a href="https://www.linkedin.com/in/toufik-sk" target="_blank"><i class="ri-linkedin-fill"></i></a>
           </div>
-          <div class="work">
-            <img src="https://source.unsplash.com/1600x900/?resturant"
-              alt="programming photo" />
-            <div class="layer">
-              <h3>Food Delivery</h3>
-              <p>
-                Contributed to the development of a Ecommerce website using
-                modern front-end technologies.
-              </p>
-              <a href="https://omnifood-toufik.netlify.app">See Project</a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="https://source.unsplash.com/1600x900/?office"
-              alt="programming photo" />
-            <div class="layer">
-              <h3>Office Attendance Managment</h3>
-              <p>
-                Implemented various front-end technologies, including HTML, CSS,
-                and JavaScript.
-              </p>
-              <a href="http://mywork-project.netlify.app">See Project</a>
-            </div>
 
+          <div class="main-btn">
+            <a href="#contact" class="btn">Hire me</a>
+            <button class="btn btn2" onclick="downloadResume()">Download Cv</button>
           </div>
         </div>
       </section>
 
-      <section class="third-section" id="project">
-        <div class="third-section-container">
-          <h2>My Work</h2>
-          <div class="container">
-            <div class="project-box">
+        <!-- ABOUT SECTION -->
+        <section class="about" id="about">
 
-              <div class="project-description">
-                <h3>Food Delivery Project:</h3>
-                <span class="link-project"><a
-                    href="https://github.com/toufikunsure-4529/omnifood-frontend-app"
-                    target="_blank">Get Source Code&#8594;</a></span>
-                <p class="text-project">Contributed to the development of a
-                  Ecommerce website using modern front-end technologies. create
-                  an user interface.</p>
+            <div class="about-img" data-aos="zoom-in-down">
+              <img src="/public/img/profile.png" alt="Developer Profile Photo">
+            </div>
+
+            <div class="about-content" data-aos="zoom-in-up">
+                <h2>I am a <span>Web Developer</span></h2>
+                <div class="expriance-area">
+                  <p class="expriance">Expriance <span>Fresher.</span></p>
+                  <p class="expriance">Email: <span>toufiksk.ab3@gmail.com</span></p>
+                  <p class="expriance">Phone: <span>+91 8001074096</span></p>
+                  <p class="expriance">Freelance: <span>Available</span></p>
+                </div>
+                <a href="https://github.com/toufikunsure-4529" class="btn" target="_blank">View All Projects</a>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section class="services" id="services">
+            <div class="center-txt" data-aos="fade-down">
+              <h2>My <span>Services</span></h2>
+            </div>
+
+            <div class="services-content" data-aos="zoom-in-up">
+              <div class="box">
+                <img src="/public/img/sape-1.svg" alt="Services Icon">
+                <h3>Web devlover</h3>
+                <p>I provide comprehensive front-end services, specializing in the design and development of stunning websites.</p>
+                <a href="#" onclick="downloadResume()">Download now<i class="ri-arrow-right-line"></i></a>
+              </div>
+              <div class="box">
+                <img src="/public/img/sape-2.svg" alt="Services Icon">
+                <h3>Web designer</h3>
+                <p>I provide comprehensive front-end services, specializing in the design and development of stunning websites.</p>
+                <a href="#" onclick="downloadResume()">Download now<i class="ri-arrow-right-line"></i></a>
+              </div>
+              <div class="box">
+                <img src="/public/img/sape-3.svg" alt="Services Icon">
+                <h3>Frontend devlover</h3>
+                <p>I provide comprehensive front-end services, specializing in the design and development of stunning websites.</p>
+                <a href="#" onclick="downloadResume()">Download now<i class="ri-arrow-right-line"></i></a>
               </div>
             </div>
-            <div class="project-box">
+        </section>
 
-              <div class="project-description">
-                <h3>Office Attendance Managment System</h3>
-                <span class="link-project"><a
-                    href="https://github.com/toufikunsure-4529/Frontend-Activity-Project"
-                    target="_blank">Get Source Code&#8594;</a></span>
-                <p class="text-project">Implemented various front-end
-                  technologies, including HTML, CSS, and JavaScript, to create a
-                  responsive and user-friendly interface.</p>
-              </div>
-            </div>
-            <div class="project-box">
-
-              <div class="project-description">
-                <h3>Ecommerce landing page</h3>
-                <span class="link-project"><a
-                    href="https://github.com/toufikunsure-4529/codsoft_-1"
-                    target="_blank">Get Source Code&#8594;</a></span>
-                <p class="text-project">Developed a web application as part of a
-                  collaborative project in a development community.
-                </p>
-              </div>
-            </div>
-            <div class="project-box">
-              <div class="project-description">
-                <h3>Live Dev Portfolio</h3>
-                <span class="link-project"><a
-                    href="https://github.com/toufikunsure-4529/codsoft_-2"
-                    target="_blank">Get Source Code&#8594;</a></span>
-                <p class="text-project">Collaborated with a team to create an
-                  engaging and visually appealing user interface.
-                </p>
-              </div>
-
-            </div>
+        <!-- PORTFOLIO SECTION -->
+        <section class="portfolio" id="portfolio">
+          <div class="center-txt" data-aos="fade-down">
+            <h2>My <span>Portfolio</span></h2>
           </div>
-        </div>
-      </section>
+          <div class="portfolio-content" data-aos="zoom-in-up">
+            
+            <div class="row">
+              <img src="/public/img/weather-app.webp" alt=" portfolio Project image">
+              <div class="main-row">
+                <div class="row-txt">
+                  <h5>WEATHER APP</h5>
+                </div>
+                <div class="row-icon"><a href="https://github.com/toufikunsure-4529/API-based-Weather-Application">
+                  <i class="ri-github-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
 
-    </main>
-    <footer>
-      <div class="footer" id="contact-me">
-        <div class="footer-frist">
-          <div class="logo"><p>Toufik's <span>Portfolio</span></p></div>
-        </div>
-        <div class="footer-second">
-          <ul>
-            <li><a target="_blank" href="https://www.linkedin.com/in/toufik-sk/"><img
-                  src="linkedin.png" alt="Linkden-logo"></a></li>
-          </ul>
-        </div>
-        <div class="footer-third">
-          <ul>
-            <li><a target="_blank" href="https://github.com/toufikunsure-4529">
-                <img src="github.png" alt="Github-logo"></a></li>
+            <div class="row">
+              <img src="/public/img/pass-gen.webp" alt=" portfolio Project image">
+              <div class="main-row">
+                <div class="row-txt">
+                  <h5>PASSWORD GEN</h5>
+                </div>
+                <div class="row-icon"><a href="https://beta-myproject.netlify.app/public/passwordgen/passwordgen">
+                  <i class="ri-github-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <img src="/public/img/ecomarce.avif" alt=" portfolio Project image">
+              <div class="main-row">
+                <div class="row-txt">
+                  <h5>Ecomarce Food Delivery App</h5>
+                </div>
+                <div class="row-icon"><a href="https://github.com/toufikunsure-4529/omnifood-frontend-app">
+                  <i class="ri-github-fill"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <img src="/public/img/attendance.png" alt=" portfolio Project image">
+              <div class="main-row">
+                <div class="row-txt">
+                  <h5>Attendance Management System</h5>
+                </div>
+                <div class="row-icon"><a href="https://github.com/toufikunsure-4529/Frontend-Activity-Project">
+                  <i class="ri-github-fill"></i></a>
+                </div>
+              </div>
+            </div>
 
-          </ul>
-        </div>
-        <div class="footer-fourth">
-          <ul>
-            <li><a target="_blank" href="/"><img src="twitter.png"
-                  alt="Twitter Logo"></a></li>
-          </ul>
+            <div class="row">
+              <img src="/public/img/todo-app.jpg" alt=" portfolio Project image">
+              <div class="main-row">
+                <div class="row-txt"><a href="https://beta-myproject.netlify.app/public/todo/todo.html">
+                  <h5>TODO APP</h5></a>
+                </div>
+                <div class="row-icon">
+                  <i class="ri-github-fill"></i>
+                </div>
+              </div>
+            </div>
 
-        </div>
-        <div class="footer-fourth">
-          <h2>Contact Me</h2><br>
-          <div class="subscribe-form">
-            <form for='Support-Form' method="post" name='Portfolio User Massage'
-              netlify>
-              <input type="text" name="name" placeholder="Enter Your Name"
-                id="name"
-                required>
-              <input type="email" name="email" placeholder="Your email here"
-                id="email"
-                required>
-              <textarea type="text" name="massage" placeholder="Your Massage"
-                id="massage"
-                required></textarea>
-              <button class="btn" type="submit" id="btn" onclick="showMsg()">Send</button>
+            <div class="row">
+              <img src="/public/img/Web_calculator.png" alt=" portfolio Project image">
+              <div class="main-row">
+                <div class="row-txt">
+                  <h5>Calculator App</h5>
+                </div>
+                <div class="row-icon"><a href="https://github.com/toufikunsure-4529/codsoft_-3">
+                  <i class="ri-github-fill"></i></a>
+                </div>
+              </div>
+            </div>
 
+
+          </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+
+        <section class="contact" id="contact">
+          <div class="center-txt" data-aos="fade-down">
+            <h2>Contact <span>Me</span></h2>
+          </div>
+          <div class="contact-form" data-aos="zoom-in">
+            <form action="">
+              <input type="text" placeholder="Enter Your Name" required>
+              <input type="email" placeholder="Email Address.." required>
+              <textarea name="" id="" cols="30" rows="10" placeholder="Write Massage Here..."></textarea>
+              <input type="submit" value="Send Message" class="sendMsg-btn">
             </form>
           </div>
+        </section>
 
-        </div>
+        <!-- FOOTER SECTION -->
+        <footer class="footer">
+          <div class="copyright">
+            <p>&copy;2023 Desigh and Devloped By Toufik Sk</p>
+          </div>
+          <a href="#home" class="scroll-top">
+            <i class="ri-arrow-up-s-fill"></i>
+          </a>
+        </footer>
+    </main>
 
-      </div>
-
-      <div class="footer-rights">
-        Copyright © 2023 Designed and developed by Toufik. All rights reserved.
-      </div>
-
-    </footer>
-
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="script.js"></script>
+    <script src="/src/js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset:300,
+          duration:1400
+      });
+    </script>
   </body>
 </html>
