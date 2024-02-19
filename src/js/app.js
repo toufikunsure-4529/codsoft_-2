@@ -27,7 +27,7 @@ window.onscroll=()=>{
 
 //resume download function
 function downloadResume() {
-  let pdfUrl = 'CV_2023070500361786.pdf';
+  let pdfUrl = 'Toufik _Resume.pdf';
   let link = document.createElement('a');
   link.href = pdfUrl;
   link.download = 'Toufik_Resume.pdf';
