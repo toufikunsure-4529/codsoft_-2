@@ -195,11 +195,30 @@
         <!-- CONTACT SECTION -->
 
         <section class="contact" id="contact">
+          
           <div class="center-txt" data-aos="fade-down">
             <h2>Request <span style="color: black;">Call Back</span></h2>
           </div>
+
           <div class="contact-form" style="color: black;">
-            <script src="https://sheetdb.io/s/f/2wl2x9so7n60s.js"></script>
+            
+            <div class="container">
+              <form id="callbackForm"  method="post" name="formdata">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        
+                <label for="msg">Write Massage Here...</label>
+                <input type="text" id="msg" name="massage" placeholder="Write Massage Here..." required>
+                <p id="errorMsg" ></p>
+
+                <button type="submit" id="submitBtn">Request Call Back</button>
+            </form>
+            <p id="date"></p>
+
+          </div>
           </div>
         </section>
 
@@ -223,5 +242,6 @@
           duration:1400
       });
     </script>
+
   </body>
 </html>
